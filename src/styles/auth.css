@@ -1,0 +1,119 @@
+/* auth.css */
+.auth-page {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+    transition: background 300ms ease;
+}
+
+.auth-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #0b1220 0%, #071028 100%);
+  color: #e6eef8;
+}
+
+.auth-card {
+    width: 380px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 24px rgba(2, 6, 23, 0.6);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.auth-title {
+    margin: 0 0 12px 0;
+    font-size: 1.4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 10px;
+    color: #e6eef8;
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.field input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.03);
+    color: inherit;
+}
+
+.auth-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.btn {
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    transition: transform .12s ease, box-shadow .12s ease;
+}
+
+.btn.primary {
+    background: linear-gradient(90deg, #6d28d9, #2563eb);
+    color: #fff;
+    box-shadow: 0 8px 18px rgba(37, 99, 235, 0.12);
+}
+
+.btn.primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(37, 99, 235, 0.16);
+}
+
+.btn.ghost {
+    background: transparent;
+    color: #cfe8ff;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.auth-error {
+    color: #ffcccc;
+    margin-top: 6px;
+}
+
+.bg-controls {
+    margin-top: 12px;
+    color: #cfe8ff;
+    font-size: 0.9rem;
+}
+
+.card-anim {
+    transform-origin: center;
+    animation: appear .28s ease both;
+}
+
+@keyframes appear {
+    from {
+        transform: translateY(8px) scale(.995);
+        opacity: 0
+    }
+
+    to {
+        transform: none;
+        opacity: 1
+    }
+}
+
+.auth-form {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  margin: 1rem;
+}

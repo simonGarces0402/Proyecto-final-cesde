@@ -1,0 +1,100 @@
+/* dashboard.css */
+.app-root {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-root {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(180deg, #0b1220 0%, #071028 100%);
+  color: #e6eef8;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header-actions {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.user-pill {
+    background: rgba(255, 255, 255, 0.04);
+    padding: 8px 12px;
+    border-radius: 999px;
+    font-weight: 600;
+}
+
+.btn.danger {
+    background: linear-gradient(90deg, #ef4444, #dc2626);
+    color: #fff;
+    border: 0;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.dashboard-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section {
+    padding: 20px;
+    margin-bottom: 24px;
+    border-radius: 8px;
+}
+
+.hupaw-card {
+    padding: 12px;
+}
+
+.card {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+    border-radius: 12px;
+    padding: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.card-grid {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+}
+
+.chart-area {
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-area {
+    flex: 1;
+}
+
+.type-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 8px;
+}
+
+.muted {
+    color: #9fb4d8;
+    font-size: 0.9rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
